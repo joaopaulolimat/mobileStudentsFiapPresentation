@@ -1,13 +1,21 @@
 import React from 'react';
 import {View, SafeAreaView, StyleSheet} from 'react-native';
 import {Avatar} from '../../components';
-import {JoaoAvatar} from '../../assets/images';
+import {JoaoAvatar, BrunoAvatar} from '../../assets/images';
 
 export default function Home() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.line}>
-        <Avatar name="Bruno" image={JoaoAvatar} />
+        <Avatar
+          image={BrunoAvatar}
+          name="Bruno"
+          details={{
+            name: 'Bruno Henrique de Oliveira',
+            description: `Atualmente trabalho com a tecnologia React native, em paralelo estudando Swift e atuando em algumas tarefas em iOS nativo.\n\nSou formado em Análise e desenvolvimento de sistemas pela FATEC Sjc e Pós graduado em Desenvolvimento Mobile pela FIAP.\n\nSou desenvolvedor de software há 6 anos, 3 primeiros anos trabalhando com desenvolvimento voltado a web e backend, e nos últimos 3 anos migrei para a área de desenvolvimento mobile.
+          `,
+          }}
+        />
         <Avatar name="Giuliano" image={JoaoAvatar} />
       </View>
       <View style={styles.line}>
