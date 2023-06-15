@@ -1,9 +1,32 @@
+import {useNavigation} from '@react-navigation/native';
 import React from 'react';
-import {View, Dimensions, Text, StyleSheet, Image} from 'react-native';
+import {
+  TouchableOpacity,
+  Dimensions,
+  Text,
+  StyleSheet,
+  Image,
+} from 'react-native';
 
-export function Avatar({name, image}: {name: string; image: any}) {
+type TDetailsProps = {
+  name: string;
+  description: string;
+};
+export function Avatar({
+  name,
+  image,
+  details,
+}: {
+  name: string;
+  image: any;
+  details: TDetailsProps;
+}) {
+  const navigation = useNavigation();
+
   return (
-    <View style={styles.centeredView}>
+    <TouchableOpacity
+      style={styles.centeredView}
+      onPress={() => navigation.navigate('Details', {details})}>
       <Image
         source={image}
         resizeMode="contain"
@@ -17,7 +40,7 @@ export function Avatar({name, image}: {name: string; image: any}) {
         }}
       />
       <Text> {name} </Text>
-    </View>
+    </TouchableOpacity>
   );
 }
 
