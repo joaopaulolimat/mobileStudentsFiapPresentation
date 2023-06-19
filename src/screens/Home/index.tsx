@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, SafeAreaView, StyleSheet} from 'react-native';
 import {Avatar} from '../../components';
-import {JoaoAvatar, BrunoAvatar} from '../../assets/images';
+import {JoaoAvatar, BrunoAvatar, GiulianoAvatar} from '../../assets/images';
 
 export default function Home() {
   return (
@@ -16,7 +16,15 @@ export default function Home() {
           `,
           }}
         />
-        <Avatar name="Giuliano" image={JoaoAvatar} />
+        <Avatar 
+        name="Giuliano" 
+        image={GiulianoAvatar}
+        details={{
+          name: 'Giuliano da Costa Accorsi',
+          description: `Atualmente trabalho com Swift.Sou desenvolvedor mobile há três anos, tenho proficiência em Swift e uma sólida formação em Análise e Desenvolvimento de Sistemas.
+        `,
+        }} 
+        />
       </View>
       <View style={styles.line}>
         <Avatar name="João Paulo" image={JoaoAvatar} />
