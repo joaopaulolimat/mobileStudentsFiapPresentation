@@ -1,7 +1,12 @@
 import React from 'react';
 import {View, SafeAreaView, StyleSheet} from 'react-native';
 import {Avatar} from '../../components';
-import {JoaoAvatar, BrunoAvatar, GiulianoAvatar, RenatoAvatar} from '../../assets/images';
+import {
+  JoaoAvatar,
+  BrunoAvatar,
+  GiulianoAvatar,
+  RenatoAvatar,
+} from '../../assets/images';
 
 export default function Home() {
   return (
@@ -11,31 +16,39 @@ export default function Home() {
           image={BrunoAvatar}
           name="Bruno"
           details={{
-            name: 'Bruno Henrique de Oliveira',
+            name: 'Bruno Henrique de Oliveira - RM 344458',
             description: `Atualmente trabalho com a tecnologia React native, em paralelo estudando Swift e atuando em algumas tarefas em iOS nativo.\n\nSou formado em Análise e desenvolvimento de sistemas pela FATEC Sjc e Pós graduado em Desenvolvimento Mobile pela FIAP.\n\nSou desenvolvedor de software há 6 anos, 3 primeiros anos trabalhando com desenvolvimento voltado a web e backend, e nos últimos 3 anos migrei para a área de desenvolvimento mobile.
           `,
           }}
         />
-        <Avatar 
-        name="Giuliano" 
-        image={GiulianoAvatar}
-        details={{
-          name: 'Giuliano da Costa Accorsi',
-          description: `Atualmente trabalho com Swift.Sou desenvolvedor mobile há três anos, tenho proficiência em Swift e uma sólida formação em Análise e Desenvolvimento de Sistemas.
+        <Avatar
+          name="Giuliano"
+          image={GiulianoAvatar}
+          details={{
+            name: 'Giuliano da Costa Accorsi - RM 345346',
+            description: `Atualmente trabalho com Swift.Sou desenvolvedor mobile há três anos, tenho proficiência em Swift e uma sólida formação em Análise e Desenvolvimento de Sistemas.
         `,
-        }} 
+          }}
         />
       </View>
       <View style={styles.line}>
-        <Avatar name="João Paulo" image={JoaoAvatar} />
-        <Avatar 
-        name="Renato" 
-        image={RenatoAvatar}
-        details={{
-          name: 'Renato Santos Nascimento',
-          description: `Trabalho com as tecnologias Java/Apex/Swift. Graduado em Sistemas de Informação e atualmente estou me formando em desenvolvimento mobile na FIAP. Trabalho com análise/desenvolvimento de software desde 2019, com maior experiência em Java e agora expandindo os conhecimentos para Mobile.
+        <Avatar
+          name="João Paulo"
+          image={JoaoAvatar}
+          details={{
+            name: 'João Paulo Tavares - RM 343951',
+            description:
+              'Sou desenvolvedor React Web e React Native. \n\nEstudei Sistemas de Informação e sou pós graduado em desenvolvimento mobile na FIAP. Trabalho com desenvolvimento de software desde 2017, iniciei como full stack e atualmente atuo apenas como front end.',
+          }}
+        />
+        <Avatar
+          name="Renato"
+          image={RenatoAvatar}
+          details={{
+            name: 'Renato Santos Nascimento - RM 343956',
+            description: `Trabalho com as tecnologias Java/Apex/Swift. Graduado em Sistemas de Informação e atualmente estou me formando em desenvolvimento mobile na FIAP. Trabalho com análise/desenvolvimento de software desde 2019, com maior experiência em Java e agora expandindo os conhecimentos para Mobile.
         `,
-        }} 
+          }}
         />
       </View>
     </SafeAreaView>
